@@ -45,8 +45,8 @@ def setup_system_tray(icon, downloads_folder):
     icon.run()
 
 if __name__ == "__main__":
-    downloads_folder = r"C:\Users\Jerush Vijay\Downloads"
+    downloads_folder = r"YOUR_DOWNLOADS_FOLDER_LOCATION"
     create_category_folders(downloads_folder)
-    image = Image.open("C:\\Users\\Jerush Vijay\\Desktop\\Python Programs\\MyPrograms\\Projects\\FileManagement\\icons8-download-64.png")  # Replace with the path to your icon image
+    image = Image.open("YOUR_DESIRED_ICON")  # Replace with the path to your icon image
     icon = pystray.Icon("Segregate Downloads", image, "Segregate Downloads", menu=pystray.Menu())
     setup_system_tray(icon, downloads_folder)
